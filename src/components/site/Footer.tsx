@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Mail, Globe } from "lucide-react";
 
+const YEAR = 2026;
+
 export function Footer() {
   return (
     <footer className="bg-brand-navy text-white mt-20">
@@ -22,10 +24,10 @@ export function Footer() {
         <div>
           <h4 className="font-semibold mb-3 text-brand-yellow">Reach Us</h4>
           <ul className="space-y-2 text-sm text-white/80">
-            <li className="flex gap-2"><MapPin className="w-4 h-4 text-brand-yellow mt-0.5" /> Powerhouse Chowk, Birgunj-13, Parsa, Nepal</li>
-            <li className="flex gap-2"><Phone className="w-4 h-4 text-brand-yellow mt-0.5" /> 980566056 / 9865406769</li>
-            <li className="flex gap-2"><Mail className="w-4 h-4 text-brand-yellow mt-0.5" /> shreaym.engg@gmail.com</li>
-            <li className="flex gap-2"><Globe className="w-4 h-4 text-brand-yellow mt-0.5" /> shreyamEngg.Co.Np</li>
+            <li className="flex gap-2"><MapPin className="w-4 h-4 text-brand-yellow mt-0.5" /><span>Powerhouse Chowk, Birgunj-13, Parsa, Nepal</span></li>
+            <li className="flex gap-2"><Phone className="w-4 h-4 text-brand-yellow mt-0.5" /><span>980566056 / 9865406769</span></li>
+            <li className="flex gap-2"><Mail className="w-4 h-4 text-brand-yellow mt-0.5" /><span>shreaym.engg@gmail.com</span></li>
+            <li className="flex gap-2"><Globe className="w-4 h-4 text-brand-yellow mt-0.5" /><span>shreyamEngg.Co.Np</span></li>
           </ul>
         </div>
         <div>
@@ -36,7 +38,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 py-4 text-center text-xs text-white/60">
-        © {new Date().getFullYear()} Shreyam Engineering and Power Solution Pvt. Ltd. | VAT 622436115 | Regd 474294/82/83
+        © {YEAR} Shreyam Engineering and Power Solution Pvt. Ltd. | VAT 622436115 | Regd 474294/82/83
       </div>
     </footer>
   );
