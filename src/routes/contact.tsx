@@ -74,7 +74,7 @@ function Info({ icon: Icon, title, value }: any) {
   );
 }
 
-function Input({ label, value, onChange, type = "text", required }: any) {
+function Input({ label, value, onChange, type = "text", required }: { label: string; value: string; onChange: (v: string) => void; type?: string; required?: boolean }) {
   return (
     <div>
       <label className="text-sm font-semibold">{label}</label>
