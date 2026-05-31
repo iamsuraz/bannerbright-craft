@@ -4,6 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { LogOut, LayoutDashboard, FileText, Wrench, Image as ImageIcon, Mail } from "lucide-react";
 
 export const Route = createFileRoute("/admin")({
+  ssr: false,
   head: () => ({ meta: [{ title: "Admin — Shreyam Engineering" }, { name: "robots", content: "noindex" }] }),
   component: AdminLayout,
 });
