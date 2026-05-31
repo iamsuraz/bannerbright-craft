@@ -1,7 +1,7 @@
 import { createFileRoute, Outlet, Link, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { LogOut, LayoutDashboard, FileText, Wrench, Image as ImageIcon, Mail } from "lucide-react";
+import { LogOut, LayoutDashboard, FileText, Wrench, Image as ImageIcon, Mail, Settings as SettingsIcon } from "lucide-react";
 
 export const Route = createFileRoute("/admin")({
   ssr: false,
@@ -56,6 +56,7 @@ function AdminLayout() {
           <NavItem to="/admin/services" icon={Wrench} label="Services" />
           <NavItem to="/admin/gallery" icon={ImageIcon} label="Gallery" />
           <NavItem to="/admin/messages" icon={Mail} label="Messages" />
+          <NavItem to="/admin/settings" icon={SettingsIcon} label="Account" />
         </nav>
         <button
           onClick={async () => { await supabase.auth.signOut(); navigate({ to: "/admin/login" }); }}
