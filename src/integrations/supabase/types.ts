@@ -74,6 +74,7 @@ export type Database = {
           description: string
           icon: string
           id: string
+          image_url: string
           sort_order: number
           tagline: string
           title: string
@@ -83,6 +84,7 @@ export type Database = {
           description?: string
           icon?: string
           id?: string
+          image_url?: string
           sort_order?: number
           tagline?: string
           title: string
@@ -92,6 +94,7 @@ export type Database = {
           description?: string
           icon?: string
           id?: string
+          image_url?: string
           sort_order?: number
           tagline?: string
           title?: string
